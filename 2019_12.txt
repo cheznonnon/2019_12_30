@@ -1,0 +1,174 @@
+
+
+----------==========----------==========----------==========----------
+
+
+"Eat Your Own Catfood."
+
+
+----------==========----------==========----------==========----------
+
+
+Change Log
+
+
+2019/12/30
+
+
+BUGFIX
+
+
+	project/macro.c
+		n_project_darkmode() : string "cur_folder"
+			OLD : memory leak
+			NEW : fixed
+
+	win32/ole/IDropTarget.c
+		n_IDropTarget_Drop()
+			OLD : memory leak
+			NEW : fixed
+	win32/win_simplemanu.c
+		n_win_simplemenu_draw_calc_all()
+			OLD : memory leak
+			NEW : fixed
+	win32/win_smallbutton.c
+		n_win_smallbutton_bitmap_make()
+			OLD : memory leak
+			NEW : fixed
+
+	CatPad
+		Config
+			OLD : memory leak
+			NEW : fixed
+	Nonnon Freecell
+		simple menu
+			OLD : a card moves when selected
+			NEW : fixed
+	Nonnon FTP
+		source code : IDropTarget
+			OLD : memory leak
+			NEW : fixed
+	Nonnon Paint
+		source code : tool window
+			OLD : memory leak
+			NEW : fixed
+	Nonnon Spider
+		simple menu
+			OLD : a card moves when selected
+			NEW : fixed
+	OrangeCat
+		Search
+			OLD : crash when do many times
+			NEW : fixed
+
+
+NEW_FEATURE
+
+
+	win32/clipboard.c
+		n_clipboard_nbmp_set()
+			NEW : bitmap setter
+		renamed
+			OLD : n_clipboard_nbmp()
+			NEW : n_clipboard_nbmp_get()
+		n_clipboard_nbmp_get() : XP mixed alpha problem
+			OLD : alpha is cleared
+			NEW : do nothing
+
+	project/clopboard_pink.ico
+		released
+			NEW : for Nonnon Paint
+
+	ArcDrop
+		MinGW version : file size
+			NEW : reduced
+	Felis
+		Select2Go : default search engine
+			OLD : bing.com
+			NEW : startpage.com
+	Nonnon Paint
+		Resizer
+			NEW : preview available
+		when a maximized window
+			NEW : thumbnail available
+		clipboard setter
+			NEW : copy to clipboard available
+
+
+----------==========----------==========----------==========----------
+
+
+Change Log
+
+
+2019/12/20
+
+
+BUGFIX
+
+
+	CatPad
+		source code : catpad_input_resizer.c
+			OLD : 2 typos
+			NEW : fixed
+		input field resizer
+			OLD : move a little in some cases
+			NEW : fixed
+	OrangeCat
+		Item View : Scroll Dragger
+			OLD : broken
+			NEW : fixed
+			[x] : NEW_FEATURE @ 2019/12/10
+
+
+NEW_FEATURE
+
+
+	win32/win_scrollbar.c
+		Version 8.0
+			NEW : drag behavior is changed again
+			[!] : thumb offset is supported
+			[!] : like IE or Firefox
+		.drag_clamp
+			NEW : default is ON
+			[!] : for OrangeCat emulation problem
+
+
+----------==========----------==========----------==========----------
+
+
+Change Log
+
+
+2019/12/10
+
+
+BUGFIX
+
+
+	win32/win_titlemenu.c
+		icon double click
+			OLD : glitch in some cases
+			NEW : fixed
+
+	All
+		TxtBox : when using Simple Menu
+			OLD : rendering has lag
+			NEW : fixed
+			[!] : fade-out animation causes
+
+
+NEW_FEATURE
+
+
+	win32/win_scrollbar.c
+		Version 8.0
+			NEW : drag behavior is changed
+	win32/win_simplemenu.c
+		.callback, .callback_data
+			NEW : for TxtBox
+			[!] : this will be called before fade-out animation
+
+
+----------==========----------==========----------==========----------
+
