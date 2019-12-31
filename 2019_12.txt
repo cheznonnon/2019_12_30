@@ -12,6 +12,27 @@
 Change Log
 
 
+2019/12/31 : Release #1
+
+
+BUGFIX
+
+
+	Neko no Te
+		simple menu and combobox
+			OLD : combo will turn on when a menu item is seleceted
+			NEW : fixed
+		delete a filt type
+			OLD : not working
+			NEW : fixed
+
+
+----------==========----------==========----------==========----------
+
+
+Change Log
+
+
 2019/12/30
 
 
