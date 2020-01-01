@@ -12,6 +12,45 @@
 Change Log
 
 
+2020/01/01 : Release #2
+
+
+BUGFIX
+
+
+	win32/win_smallbutton.c
+		n_win_smallbutton_bitmap_make()
+			OLD : access violation
+			NEW : fixed
+
+	All
+		when system setting is changed
+			OLD : crash
+			NEW : fixed
+	Nonnon Paint
+		Canvas : Thumbnail : left-handedness support
+			OLD : not supported
+			NEW :     supported
+
+
+NEW_FEATURE
+
+
+	win32/win_combobox.c
+		window property : simplemenu
+			NEW : supported
+	win32/win_simplemenu.c
+		window property
+			NEW : set true when closed
+			[!] : for a combobox conflict problem
+
+
+----------==========----------==========----------==========----------
+
+
+Change Log
+
+
 2019/12/31 : Release #1
 
 
